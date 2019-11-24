@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/grad1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set Your PIN"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_marginTop="30dp">
+
+        <EditText
+            android:id="@+id/et_old_pin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="Enter Old PIN"
+            android:paddingLeft="10dp"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:maxLength="4"
+            android:singleLine="true"
+            android:visibility="gone"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/et_new_pin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="Enter New PIN"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:maxLength="4"
+            android:singleLine="true"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/et_new_pin2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="Confirm New PIN"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:maxLength="4"
+            android:singleLine="true"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/forget_pin_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forget PIN ?"
+            android:textColor="@color/colorRed"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:visibility="gone"/>
+
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="@drawable/edittext_bg"/>
+
+    </LinearLayout>
+
+</LinearLayout>

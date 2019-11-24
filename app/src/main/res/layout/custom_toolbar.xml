@@ -1,0 +1,54 @@
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar_top"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:minHeight="?attr/actionBarSize"
+    android:background="@color/colorPrimaryDark"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:text="Title"
+        android:fontFamily="serif"
+        android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/toolbar_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:text="Sub Title"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/toolbar_title"
+            android:fontFamily="serif"/>
+
+        <ImageView
+            android:id="@+id/toolbar_save_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_save"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/toolbar_add_icon"/>
+
+    <ImageView
+        android:id="@+id/toolbar_add_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_add_new"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>
